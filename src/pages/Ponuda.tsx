@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react'
 import { CheckCircle, Settings, Mail, FileText, AlertTriangle, Printer, Trash2, CreditCard } from 'lucide-react'
 import { motion } from 'framer-motion'
@@ -54,7 +52,6 @@ const serviceOptions: ServiceOption[] = [
 
 export default function PonudaPage() {
   const [selectedOptions, setSelectedOptions] = useState<Set<string>>(new Set())
-  const [showAdmin, setShowAdmin] = useState(false)
   const [sections, setSections] = useState<any[]>([])
   const [editingId, setEditingId] = useState<string | null>(null)
 
